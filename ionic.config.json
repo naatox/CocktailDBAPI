@@ -1,0 +1,7 @@
+{
+  "name": "cocktailAPI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
