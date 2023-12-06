@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>alcoholic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="medium">
+  <ion-card *ngFor="let drink of drinksData">
+    <img alt="drink" src='{{drink.strDrinkThumb}}' />
+    <ion-card-header>
+      <ion-card-title>{{drink.strDrink}}</ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button id="present-alert" (click)="details(drink.idDrink)">Details</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
