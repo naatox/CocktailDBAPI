@@ -9,14 +9,6 @@ const routes: Routes = [
   {
     path: 'drinks',
     loadChildren: () => import('./drinks/drinks.module').then( m => m.DrinksPageModule)
-  },
-  {
-    path: 'alcoholic',
-    loadChildren: () => import('./alcoholic/alcoholic.module').then( m => m.AlcoholicPageModule)
-  },
-  {
-    path: 'non-alcoholic',
-    loadChildren: () => import('./non-alcoholic/non-alcoholic.module').then( m => m.NonAlcoholicPageModule)
   }
 ];
 @NgModule({
