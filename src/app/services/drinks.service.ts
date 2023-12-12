@@ -18,4 +18,7 @@ export class DrinksService {
   getDrinkDetails(id:number) {
     return this.http.get(`${this.url}/lookup.php`, { params: { i: id } });
   }
+  getRandDrink() {
+    return this.http.get(`${this.url}/random.php`);
+  }
 }
